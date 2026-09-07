@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live IDPS Security Dashboard</title>
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f9; margin: 40px; color: #333; }
+        h1 { color: #d9534f; }
+        .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f8f9fa; }
+        .danger { color: red; font-weight: bold; }
+        .safe { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Live WSL System Intrusion Dashboard</h1>
+    
+    <div class="card">
+        <h2>Flagged Security Events & Blocks</h2>
+        <ul>
+        <li class="danger">10.0.0.45</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Active System Log Monitor</h2>
+        <table>
+            <tr><th>Recent Log Entries</th></tr>
+        <tr><td class="safe">[2026-09-07 12:23:30] IP: 192.168.1.15 | Requests: 3 | Status: Normal</td></tr>
+        <tr><td class="danger">[2026-09-07 12:23:31] IP: 10.0.0.45 | Requests: 15 | Status: Malicious (DDoS Spike)</td></tr>
+        <tr><td class="safe">[2026-09-07 12:23:49] IP: 172.16.0.8 | Requests: 5 | Status: Normal</td></tr>
+        <tr><td class="danger">[2026-09-07 12:23:50] IP: 10.0.0.45 | Requests: 20 | Status: Malicious (DDoS Spike)</td></tr>
+        </table>
+    </div>
+</body>
+</html>
