@@ -1,2 +1,3 @@
 traffic_logs.txt
 blocked_ips.txt
+idps_*.log
